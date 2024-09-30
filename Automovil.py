@@ -1,4 +1,6 @@
-class Automovil:
+from abc import ABC, abstractmethod
+
+class Automovil(ABC):
     ruedas = 4
     def __init__(self,color,marca,aceleracion,velocidad):
         self.color = color
@@ -13,3 +15,7 @@ class Automovil:
     def frena(self):
         self.velocidad = self.velocidad - self.aceleracion
         return self.velocidad
+
+    @abstractmethod
+    def conducir(self):
+        pass
