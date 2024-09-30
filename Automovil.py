@@ -5,3 +5,11 @@ class Automovil:
         self.marca = marca
         self.aceleracion = aceleracion
         self.velocidad = velocidad
+
+    def acelera(self):
+        self.velocidad = self.velocidad + self.aceleracion
+        return self.velocidad
+
+    def frena(self):
+        self.velocidad = self.velocidad - self.aceleracion
+        return self.velocidad
