@@ -15,3 +15,6 @@ class AutomovilVolador(Automovil):
     
     def conducir(self):
         return "Esta volando"
+
+    def no_conducir(self):
+        return "No esta volando"
